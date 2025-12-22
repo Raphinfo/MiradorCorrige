@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0"
+            xmlns="http://javafx.com/javafx/24.0.1"
+            xmlns:fx="http://javafx.com/fxml/1">
+
+   <children>
+      <VBox layoutX="80.0" layoutY="60.0" spacing="30.0">
+
+         
+         <Label fx:id="musiquePageTitle" text="Fiche Musique"
+                style="-fx-text-fill: #4897a8;">
+            <font><Font size="40.0"/></font>
+         </Label>
+
+         
+         <HBox spacing="20.0">
+            <AnchorPane prefHeight="100.0" prefWidth="250.0"
+                        style="-fx-background-color: #4897a8; -fx-background-radius: 12;">
+               <children>
+                  <Label text="id" textFill="white" layoutX="20" layoutY="35">
+                     <font><Font size="24.0"/></font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="100.0" prefWidth="700.0"
+                        style="-fx-background-color: white; -fx-background-radius: 12;">
+               <children>
+                  <Label fx:id="musiqueIdValue" text="MUS-001" layoutX="20" layoutY="35">
+                     <font><Font size="24.0"/></font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </HBox>
+
+         
+         <HBox spacing="20.0">
+            <AnchorPane prefHeight="100.0" prefWidth="250.0"
+                        style="-fx-background-color: #4897a8; -fx-background-radius: 12;">
+               <children>
+                  <Label text="name" textFill="white" layoutX="20" layoutY="35">
+                     <font><Font size="24.0"/></font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="100.0" prefWidth="700.0"
+                        style="-fx-background-color: white; -fx-background-radius: 12;">
+               <children>
+                  <Label fx:id="musiqueNameValue" text="Bohemian Rhapsody" layoutX="20" layoutY="35">
+                     <font><Font size="24.0"/></font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </HBox>
+
+        
+         <HBox spacing="20.0">
+            <AnchorPane prefHeight="100.0" prefWidth="250.0"
+                        style="-fx-background-color: #4897a8; -fx-background-radius: 12;">
+               <children>
+                  <Label text="type" textFill="white" layoutX="20" layoutY="35">
+                     <font><Font size="24.0"/></font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="100.0" prefWidth="700.0"
+                        style="-fx-background-color: white; -fx-background-radius: 12;">
+               <children>
+                  <Label fx:id="musiqueTypeValue" text="Rock" layoutX="20" layoutY="35">
+                     <font><Font size="24.0"/></font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </HBox>
+
+         
+         <HBox spacing="20.0">
+            <AnchorPane prefHeight="100.0" prefWidth="250.0"
+                        style="-fx-background-color: #4897a8; -fx-background-radius: 12;">
+               <children>
+                  <Label text="country" textFill="white" layoutX="20" layoutY="35">
+                     <font><Font size="24.0"/></font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="100.0" prefWidth="700.0"
+                        style="-fx-background-color: white; -fx-background-radius: 12;">
+               <children>
+                  <Label fx:id="musiqueCountryValue" text="UK" layoutX="20" layoutY="35">
+                     <font><Font size="24.0"/></font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </HBox>
+
+      </VBox>
+   </children>
+</AnchorPane>

@@ -49,14 +49,12 @@ public class Musee {
 	 public String getNom() {
 		 return nom;
 	 }
-	 public void setPays(String pays) {
-		 this.pays = pays;
+	 public void setNom(String nom) 
+	 { 
+		 this.nom = nom; 
 	 }
-	 public String getPays() {
-		 return pays;
+	 public void setPays(String pays) { this.pays = pays; 
 	 }
-	 public void setNom(String pays) {
-		 this.pays = pays;
 	 }
-}
+
 	  

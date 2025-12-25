@@ -8,57 +8,31 @@ public class Nouvelle {
     protected String date;
     protected String texte;
 
-    public Nouvelle(String titre, String auteur, String episode, String date, String texte) 
-    {
+    
+    public Nouvelle(String titre, String auteur, String episode, String date) {
         this.titre = titre;
         this.auteur = auteur;
         this.episode = episode;
         this.date = date;
-        this.texte = texte;
+        this.texte = "";
     }
 
-    public String getTitre() 
-    { 
-    	return titre; 
-    }
-    public void setTitre(String titre) 
-    { 
-    	this.titre = titre; 
-    }
+    public Nouvelle(String string, String string2) {
+		// TODO Auto-generated constructor stub
+	}
 
-    public String getAuteur() 
-    { 
-    	return auteur; 
-    }
-    public void setAuteur(String auteur) 
-    { 
-    	this.auteur = auteur; 
-    }
+	public String getTitre() { return titre; }
+    public void setTitre(String titre) { this.titre = titre; }
 
-    public String getEpisode() 
-    { 
-    	return episode; 
-    }
-    public void setEpisode(String episode) 
-    { 
-    	this.episode = episode; 
-    }
+    public String getAuteur() { return auteur; }
+    public void setAuteur(String auteur) { this.auteur = auteur; }
 
-    public String getDate() 
-    { 
-    	return date; 
-    }
-    public void setDate(String date) 
-    { 
-    	this.date = date; 
-    }
+    public String getEpisode() { return episode; }
+    public void setEpisode(String episode) { this.episode = episode; }
 
-    public String getTexte() 
-    { 
-    	return texte; 
-    }
-    public void setTexte(String texte) 
-    { 
-    	this.texte = texte; 
-    }
+    public String getDate() { return date; }
+    public void setDate(String date) { this.date = date; }
+
+    public String getTexte() { return texte; }
+    public void setTexte(String texte) { this.texte = texte; }
 }

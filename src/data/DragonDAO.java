@@ -46,13 +46,13 @@ public class DragonDAO {
             String titre = lireTexte(champ, "title");
             String description = lireTexte(champ, "blurb");
 
-            // Valeurs “fantasy” (tu peux les changer plus tard)
+            
             String elementDragon = "Feu";
             String rarete = "Légendaire";
 
             dragons.add(new Dragon(id, nom, titre, description, elementDragon, niveau, rarete));
 
-            if (dragons.size() >= 6) break; // si tu affiches 6 cartes comme dans ton FXML
+            if (dragons.size() >= 6) break; 
         }
 
         return dragons;

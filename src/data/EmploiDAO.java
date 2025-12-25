@@ -51,7 +51,7 @@ public class EmploiDAO {
             String url = lireTexte(o, "url", "jobUrl", "applyUrl");
             String logo = lireTexte(o, "companyLogo", "companyLogoUrl", "logo");
 
-            // fallback (au cas où)
+
             if (id.isBlank()) id = "EMP-" + (emplois.size() + 1);
 
             emplois.add(new Emploi(id, titre, entreprise, url, logo));

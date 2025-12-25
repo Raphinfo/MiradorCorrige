@@ -6,6 +6,7 @@ import data.DragonDAO;
 import data.EmploiDAO;
 import architecture.Fenetre;
 import vue.VueEmploi;
+import vue.VueMusique;
 import vue.VueDragon;
 
 
@@ -26,7 +27,9 @@ public class App {
 		
 	 
 	    //Controleur.choisirVuePrincipale(VueEmploi.class);
-		Controleur.choisirVuePrincipale(VueDragon.class);
+		//Controleur.choisirVuePrincipale(VueDragon.class);
+		Controleur.choisirVuePrincipale(VueMusique.class);
+		//Controleur.choisirVuePrincipale(VueNouvelle.class);
 		Fenetre.launch(Fenetre.class, parametres);	
 	}
 }

@@ -27,8 +27,21 @@ public class VueMusique extends Vue {
         super.activerControles();
     }
 
-	public void afficherMusiques(List<Musique> musiques) {
-		// TODO Auto-generated method stub
-		
-	}
+    public void afficherMusiques(List<Musique> musiques) {
+        int index = 1;
+
+        for (Musique m : musiques) {
+            if (index > 3) break;
+
+            TextField champName    = (TextField) lookup("#musiqueNameValue" + index);
+            TextField champType    = (TextField) lookup("#musiqueTypeValue" + index);
+            TextField champCountry = (TextField) lookup("#musiqueCountryValue" + index);
+
+            if (champName != null)    champName.setText(m.getName());
+            if (champType != null)    champType.setText(m.getType());
+            if (champCountry != null) champCountry.setText(m.getCountry());
+
+            index++;
+        }
+    }
 }

@@ -8,7 +8,6 @@ public class Nouvelle {
     protected String date;
     protected String texte;
 
-    
     public Nouvelle(String titre, String auteur, String episode, String date) {
         this.titre = titre;
         this.auteur = auteur;
@@ -17,11 +16,7 @@ public class Nouvelle {
         this.texte = "";
     }
 
-    public Nouvelle(String string, String string2) {
-		// TODO Auto-generated constructor stub
-	}
-
-	public String getTitre() { return titre; }
+    public String getTitre() { return titre; }
     public void setTitre(String titre) { this.titre = titre; }
 
     public String getAuteur() { return auteur; }

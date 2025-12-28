@@ -4,6 +4,7 @@
 import architecture.Controleur;
 import data.DragonDAO;
 import data.EmploiDAO;
+import data.NouvelleDAO;
 import architecture.Fenetre;
 import vue.VueEmploi;
 import vue.VueMusique;
@@ -22,7 +23,8 @@ public class App {
 		dragondao.listerDragons();
 		EmploiDAO emploidao = new EmploiDAO();
 		emploidao.listerEmplois();
-		
+		NouvelleDAO nouvelledao = new NouvelleDAO();
+		nouvelledao.listerNouvelles();
 		
 		
 		

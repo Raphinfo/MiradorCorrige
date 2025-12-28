@@ -6,15 +6,17 @@ import java.util.List;
 import com.sun.media.jfxmedia.logging.Logger;
 
 import architecture.Controleur;
+import data.NouvelleDAO;
 import modele.Nouvelle;
 import vue.VueNouvelle;
 
-public class ControleurNouvelle extends Controleur {
+    public class ControleurNouvelle extends Controleur {
 
     public ControleurNouvelle() {
         Logger.logMsg(Logger.INFO, "new ControleurNouvelle()");
     }
-
+    protected NouvelleDAO dao = new NouvelleDAO();
+    
     public void initialiser() {
 
         Nouvelle nouvelle1 = new Nouvelle("Réseau", "Cisco", "VLAN", "HSRP");
@@ -33,7 +35,6 @@ public class ControleurNouvelle extends Controleur {
         nouvelles.add(nouvelle5);
         nouvelles.add(nouvelle6);
 
-        
         VueNouvelle.getInstance().afficherNouvelles(nouvelles);
     }
 }

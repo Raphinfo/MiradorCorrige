@@ -72,7 +72,7 @@ public class DragonDAO {
             }
 
         } catch (Exception e) {
-            System.out.println(" Données indisponibles (réseau/DNS) : " + urlTexte);
+            //System.out.println(" Données indisponibles (réseau/DNS) : " + urlTexte);
             return ""; 
         }
     }

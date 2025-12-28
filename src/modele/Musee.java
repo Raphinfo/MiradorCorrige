@@ -6,13 +6,21 @@ public class Musee {
     protected String annee;
     protected String nom;
 
-    public Musee(String titre, String annee, String nom) {
+    public Musee(String titre, String annee, String nom, String nom2, String pays) {
         this.titre = titre;
         this.annee = annee;
         this.nom = nom;
     }
 
-    public String getTitre() { return titre; }
+   
+
+	public Musee(String string, String string2, String string3) {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+	public String getTitre() { return titre; }
     public String getAnnee() { return annee; }
     public String getNom() { return nom; }
 
